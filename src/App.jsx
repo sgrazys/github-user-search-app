@@ -1,7 +1,7 @@
 import './App.css';
 
 function App() {
-	return <h1 className='app'>The Octocat</h1>;
+	return <div className='app'>devFinder. Coming Soon...</div>;
 }
 
 export default App;
