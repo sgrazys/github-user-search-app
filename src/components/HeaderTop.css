@@ -1,0 +1,41 @@
+.header-top {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	border: solid 1px crimson;
+}
+
+.logo {
+	font-size: 2.6rem;
+	font-weight: 700;
+	color: var(--clr-dark);
+}
+
+.mode-box {
+	display: flex;
+	align-items: center;
+	gap: 1.0067em;
+	color: var(--clr-blue-gray);
+	cursor: pointer;
+
+	transition: all 0.3s;
+}
+.mode-icon path {
+	transition: fill 0.3s ease;
+}
+
+.mode-box:hover {
+	color: var(--clr-dark);
+}
+
+.mode-box:hover > .mode-icon path {
+	fill: var(--clr-dark);
+}
+
+.theme-mode {
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+}

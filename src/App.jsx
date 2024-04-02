@@ -1,11 +1,11 @@
 import './App.css';
+import HeaderTop from './components/HeaderTop';
 
 function App() {
 	return (
 		<div className='app'>
 			<header>
-				<div className='top'>Logo + switch mode</div>
-				<div className='search'>Search</div>
+				<HeaderTop />
 			</header>
 			<main>Dev Card</main>
 			<footer>Made by</footer>
