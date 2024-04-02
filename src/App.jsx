@@ -7,7 +7,7 @@ function App() {
 				<div className='top'>Logo + switch mode</div>
 				<div className='search'>Search</div>
 			</header>
-			<main>Main Info</main>
+			<main>Dev Card</main>
 			<footer>Made by</footer>
 		</div>
 	);
