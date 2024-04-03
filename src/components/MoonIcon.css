@@ -1,0 +1,7 @@
+.mode-icon path {
+	transition: fill 0.3s ease;
+}
+
+.mode-box:hover > .mode-icon path {
+	fill: var(--clr-dark);
+}

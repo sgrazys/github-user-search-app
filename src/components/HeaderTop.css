@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: space-between;
 
-	border: solid 1px crimson;
+	margin-bottom: 3.6rem;
 }
 
 .logo {
@@ -21,16 +21,9 @@
 
 	transition: all 0.3s;
 }
-.mode-icon path {
-	transition: fill 0.3s ease;
-}
 
 .mode-box:hover {
 	color: var(--clr-dark);
-}
-
-.mode-box:hover > .mode-icon path {
-	fill: var(--clr-dark);
 }
 
 .theme-mode {
