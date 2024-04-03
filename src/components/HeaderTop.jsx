@@ -2,16 +2,14 @@ import './HeaderTop.css';
 // import sun from '../assets/icon-sun.svg';
 // import moon from '../assets/icon-moon.svg';
 
-import { ReactComponent as Sun } from '../assets/icon-sun.svg';
-
 function HeaderTop() {
 	return (
 		<div className='header-top'>
 			<div className='logo'>devfinder</div>
 			<div className='mode-box'>
 				<p className='theme-mode'>Dark</p>
-				<Sun />
-				{/* <svg
+
+				<svg
 					className='mode-icon'
 					width='20'
 					height='20'
@@ -21,7 +19,7 @@ function HeaderTop() {
 						fill='#697C9A'
 						fillRule='nonzero'
 					/>
-				</svg> */}
+				</svg>
 			</div>
 		</div>
 	);

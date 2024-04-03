@@ -8,7 +8,7 @@ function App() {
 				<HeaderTop />
 			</header>
 			<main>Dev Card</main>
-			<footer>Made by</footer>
+			<footer>FOOTER</footer>
 		</div>
 	);
 }
