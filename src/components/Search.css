@@ -3,6 +3,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
+	margin-bottom: 1.0667em;
 }
 
 .magnifier {

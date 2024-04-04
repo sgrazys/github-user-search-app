@@ -4,3 +4,35 @@
 
 	padding: 2.0667em 1.6em 0;
 }
+
+.card {
+	background-color: var(--clr-white);
+	border-radius: 1em;
+	padding: 2.1333em 1.6em 3.2em;
+	border: solid 1px purple;
+}
+
+.card-header {
+	display: flex;
+	gap: 1.2667em;
+	margin-bottom: 2.2em;
+}
+
+.profile-img {
+	min-width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: peru;
+}
+
+.card-content {
+	margin-bottom: 23px;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: var(--clr-light);
+	border-radius: 10px;
+	padding: 18px 15px;
+}
