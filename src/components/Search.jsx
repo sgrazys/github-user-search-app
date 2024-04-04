@@ -1,18 +1,22 @@
+import Button from './Button';
 import './Search.css';
 
 function Search() {
 	return (
 		<form className='search-bar'>
-			<div className='magnifier'>
+			<label
+				htmlFor='search'
+				className='magnifier'>
 				<div className='circle'></div>
 				<div className='line'></div>
-			</div>
+			</label>
 			<input
+				id='search'
 				className='search-input'
 				type='text'
 				placeholder='Search GitHub username…'
 			/>
-			<button className='btn'>Search</button>
+			<Button title={'Search'} />
 		</form>
 	);
 }

@@ -1,0 +1,21 @@
+.btn {
+	font-family: inherit;
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: var(--clr-white);
+	background-color: var(--clr-primary);
+	border: none;
+	border-radius: 1rem;
+	padding: 0.8571em 1.3214em;
+	cursor: pointer;
+
+	transition: all 0.3s;
+
+	position: absolute;
+	right: 7px;
+}
+
+.search-input:focus + .btn,
+.btn:hover {
+	background-color: #60abff;
+}
