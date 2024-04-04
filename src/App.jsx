@@ -1,14 +1,18 @@
 import './App.css';
+import Header from './components/Header';
+import HeaderTop from './components/HeaderTop';
+import Search from './components/Search';
 
 function App() {
 	return (
 		<div className='app'>
-			<header>
-				<div className='top'>Logo + switch mode</div>
-				<div className='search'>Search</div>
-			</header>
+			<Header>
+				<HeaderTop />
+				<Search />
+			</Header>
+
 			<main>Dev Card</main>
-			<footer>Made by</footer>
+			<footer>FOOTER</footer>
 		</div>
 	);
 }
