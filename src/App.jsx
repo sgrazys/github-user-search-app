@@ -1,10 +1,31 @@
+/* eslint-disable no-unused-vars */
+import { useEffect } from 'react';
 import './App.css';
 import profileImg from './assets/img.jpeg';
+import Card from './components/Card';
+
 import Header from './components/Header';
 import HeaderTop from './components/HeaderTop';
 import Search from './components/Search';
 
+const URL = 'https://api.github.com/users/';
+
 function App() {
+	useEffect(() => {
+		async function getUser() {
+			const resp = await fetch(`${URL}belauzas`);
+			const data = await resp.json();
+
+			console.log(data);
+
+			const { location, name } = data;
+			console.log(location);
+			console.log(name);
+		}
+
+		getUser();
+	}, []);
+
 	return (
 		<div className='app'>
 			<Header>
@@ -13,39 +34,7 @@ function App() {
 			</Header>
 
 			<main>
-				<div className='card'>
-					<div className='card-header'>
-						<img
-							className='profile-img'
-							src={profileImg}
-							alt='User profile image'
-						/>
-						<div className='card-header-content'>
-							<p className='name'>THE OCTOCAT</p>
-							<p className='user-name'>@octocat</p>
-							<p className='registered-date'>1410 07 15</p>
-						</div>
-					</div>
-					<p className='card-content'>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam quasi sapiente tenetur dicta explicabo amet excepturi mollitia iusto impedit veniam
-						velit aperiam vitae tempore modi voluptatem, voluptatum accusantium. Laudantium?
-					</p>
-
-					<div className='stats'>
-						<div className='repos'>
-							<p>Repos</p>
-							<p>8</p>
-						</div>
-						<div className='followers'>
-							<p>Followers</p>
-							<p>1009</p>
-						</div>
-						<div className='following'>
-							<p>Following</p>
-							<p>1991</p>
-						</div>
-					</div>
-				</div>
+				<Card img={profileImg} />
 			</main>
 			<footer>FOOTER</footer>
 		</div>

@@ -1,0 +1,85 @@
+.card {
+	background-color: var(--clr-white);
+	border-radius: 1em;
+	padding: 2.1333em 1.6em 3.2em;
+	box-shadow: 0 4px 20px 0 rgba(0, 121, 255, 0.15);
+}
+
+.card-header {
+	display: flex;
+	gap: 1.2667em;
+	margin-bottom: 2.2em;
+}
+
+.profile-img {
+	min-width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: peru;
+}
+
+.name {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+.user-name {
+	color: var(--clr-primary);
+}
+
+.registered-date,
+.user-name {
+	font-size: 1.3rem;
+}
+
+.card-content {
+	font-size: 1.3rem;
+	line-height: 1.921;
+	color: var(--clr-blue-gray);
+	margin-bottom: 1.7692em;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	background-color: var(--clr-light);
+	border-radius: 10px;
+	padding: 18px 15px;
+
+	margin-bottom: 1.6em;
+}
+
+.stat-headline {
+	font-size: 1.1rem;
+}
+
+.stats-value {
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.card-footer {
+}
+
+.card-footer-item {
+	font-size: 1.3rem;
+	color: var(--clr-blue-gray);
+
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.card-footer-item:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.footer-icon {
+	display: inline-block;
+}
+
+.city {
+	margin-left: 5px;
+}
